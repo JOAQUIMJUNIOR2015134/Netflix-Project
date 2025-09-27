@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import SimpleCard from "../Components/SimpleCard";
 import "../Styles/LandingPage.css";
-import "../Styles/Navbar.css"
 import "../Styles/SimpleCard.css"
 
 

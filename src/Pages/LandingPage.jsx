@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import SimpleCard from "../Components/SimpleCard";
 import "../Styles/LandingPage.css";
-import "../Styles/Navbar.css"
 import "../Styles/SimpleCard.css"
 
 const API_KEY = "b7f24a66c3fb7e32c9e32c7dcb0faa45";
