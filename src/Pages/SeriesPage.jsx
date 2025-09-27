@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react"; // ✅ Adicionar useEffect
-import Navbar from "../Components/Navbar";
+import React, { useState, useEffect } from "react"; 
 import SimpleCard from "../Components/SimpleCard";
 
 const API_KEY = "b7f24a66c3fb7e32c9e32c7dcb0faa45";
