@@ -10,7 +10,6 @@ import { BrowserRouter } from 'react-router-dom'
 import { Routes, Route } from 'react-router-dom'
 import Navbar from './Components/NavBar.jsx'
 import Footer from './Components/Footer.jsx'
-import './Styles/Navbar.css'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
