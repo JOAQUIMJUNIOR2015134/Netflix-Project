@@ -1,0 +1,140 @@
+/* 🎬 CARD BASE - DESKTOP */
+.simple-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 12px;
+    padding: 1rem;
+    background-color: #ffffff1a;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    min-width: 200px;
+    height: auto;
+    color: #fff;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    border: 1px solid #ffffff20;
+}
+
+.simple-card:hover {
+    transform: translateY(-8px);
+    background-color: #ffffff25;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+
+.simple-card-image {
+    width: 100%;
+    aspect-ratio: 2/3;          /* Proporção consistente */
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease;
+}
+
+/* .simple-card:hover .simple-card-image {
+    transform: scale(1.05);
+} */
+
+.simple-card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.simple-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* 📱 TABLET (768px - 1024px) */
+@media (max-width: 1024px) {
+    .simple-card {
+        padding: 0.8rem;
+        gap: 10px;
+        min-width: 180px;
+    }
+    
+    .simple-card-title {
+        font-size: 1rem;
+    }
+    
+    .simple-card:hover {
+        transform: translateY(-5px);
+    }
+}
+
+/* 📱 MOBILE GRANDE (481px - 768px) */
+@media (max-width: 768px) {
+    .simple-card {
+        padding: 0.5rem;
+        gap: 6px;
+        min-width: 130px;
+        border-radius: 8px;
+    }
+    
+    .simple-card-title {
+        font-size: 0.85rem;
+        line-height: 1.2;
+    }
+    
+    .simple-card-image {
+        border-radius: 6px;
+    }
+    
+    .simple-card:hover {
+        transform: translateY(-2px);
+    }
+}
+
+/* 📱 MOBILE (até 480px) */
+@media (max-width: 480px) {
+    .simple-card {
+        padding: 0.4rem;
+        gap: 4px;
+        min-width: 110px;
+        border-radius: 6px;
+    }
+    
+    .simple-card-title {
+        font-size: 0.75rem;
+        font-weight: 500;
+        line-height: 1.1;
+    }
+    
+    .simple-card:hover {
+        transform: translateY(-2px);
+    }
+    
+    .simple-card-image {
+        border-radius: 4px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+}
+
+/* 📱 MOBILE PEQUENO (até 320px) */
+@media (max-width: 320px) {
+    .simple-card {
+        padding: 0.3rem;
+        gap: 3px;
+        min-width: 90px;
+        border-radius: 4px;
+    }
+    
+    .simple-card-title {
+        font-size: 0.65rem;
+        line-height: 1.0;
+        font-weight: 600;
+    }
+    
+    .simple-card:hover {
+        transform: translateY(-1px);
+    }
+}
+

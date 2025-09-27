@@ -1,0 +1,161 @@
+/* 🌐 BASE STYLES - DESKTOP FIRST */
+.landing-page,
+.hero-card {
+    padding-bottom: 2rem;    /* Largura máxima para monitores grandes */
+    margin: 100px 0px 0px 0px;           /* Centraliza o conteúdo */
+    padding: 0;          /* Espaçamento lateral */
+}
+
+.landing-title {
+    font-size: clamp(2rem, 4vw, 3rem);  /* Título responsivo */
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+/* 🎬 GRID DE FILMES - DESKTOP */
+.popular-movies {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* 📺 SEÇÕES HORIZONTAIS - DESKTOP */
+.now-playing-movies,
+.top-rated-movies,
+.airing-today-movies,
+.upcoming-movies,
+.filter-cast,
+.more-like {
+    display: flex;
+overflow-x: auto; 
+scrollbar-width: none;      /* Habilita rolagem horizontal */
+    gap: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* 💻 BREAKPOINT DESKTOP GRANDE (acima de 1440px) */
+@media (min-width: 1441px) {
+    .landing-page {
+        padding: 0 60px;
+    }
+    
+    .popular-movies,
+    .now-playing-movies,
+    .top-rated-movies,
+    .airing-today-movies,
+    .upcoming-movies,
+    .filter-cast {
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 40px;
+    }
+}
+
+/* 📱 BREAKPOINT TABLET MÉDIO (768px - 1024px) */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .landing-page {
+        padding: 0 25px;
+    }
+    
+    .popular-movies,
+    .now-playing-movies,
+    .top-rated-movies,
+    .airing-today-movies,
+    .upcoming-movies {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 18px;
+    }
+}
+
+/* 📱 BREAKPOINT TABLET (481px - 768px) */
+@media (max-width: 768px) and (min-width: 481px) {
+    .landing-page {
+        padding: 0 30px;
+        margin-top: 100px;
+    }
+    
+    .landing-title {
+        font-size: 2.2rem;
+        margin-bottom: 16px;
+    }
+    
+    .popular-movies,
+    .now-playing-movies,
+    .top-rated-movies,
+    .airing-today-movies
+    .upcoming-movies {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 24px;
+        margin-top: 16px;
+    }
+}
+
+/* 📱 BREAKPOINT TABLET PEQUENO (481px - 768px) */
+@media (max-width: 768px) {
+    .landing-page {
+        padding: 0 15px;
+        margin-top: 100px;
+    }
+    
+    .landing-title {
+        font-size: 1.8rem;
+        text-align: left;
+        margin-bottom: 15px;
+    }
+    
+    .popular-movies,
+    .now-playing-movies,
+    .top-rated-movies,
+    .airing-today-movies {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 15px;
+        margin-top: 15px;
+    }
+}
+
+/* 📱 BREAKPOINT MOBILE (até 480px) */
+@media (max-width: 480px) {
+    .landing-page {
+        padding: 0 10px;
+        margin-top: 100px;
+        padding-bottom: 1rem;
+    }
+    
+    .landing-title {
+        font-size: 1.4rem;
+       text-align: left;
+        margin-bottom: 10px;
+    }
+    
+    .popular-movies,
+    .now-playing-movies,
+    .top-rated-movies,
+    .airing-today-movies {
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+        gap: 10px;
+        margin-top: 10px;
+    }
+}
+
+/* 📱 BREAKPOINT MOBILE PEQUENO (até 320px) */
+@media (max-width: 320px) {
+    .landing-page {
+        padding: 0 8px;
+    }
+    
+    .landing-title {
+        font-size: 1.2rem;
+    }
+    
+    .popular-movies,
+    .now-playing-movies,
+    .top-rated-movies,
+    .airing-today-movies {
+        grid-template-columns: repeat(2, 1fr);  /* Exatamente 2 colunas */
+        gap: 8px;
+    }
+}
